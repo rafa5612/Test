@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single-Phase Electrical Tools</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>⚡ Single-Phase Electrical Calculations</header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tools">Calculation Tools</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="tools">
+      <h2>📋 Select a Calculation Tool</h2>
+
+      <div class="collapsible">
+        <button class="collapsible-header">1️⃣ Single-Phase Load Flow Solver</button>
+        <div class="collapsible-content">
+          <h3>Load Flow Solver</h3>
+          <label>Voltage (V): <input type="number" id="loadVoltage"></label>
+          <label>Current (A): <input type="number" id="loadCurrent"></label>
+          <label>Power Factor: <input type="number" id="loadPF"></label>
+          <button id="calcLoadFlow">Calculate</button>
+          <p id="loadFlowResult"></p>
+        </div>
+      </div>
+
+      <div class="collapsible">
+        <button class="collapsible-header">2️⃣ Power Factor Correction Calculator</button>
+        <div class="collapsible-content">
+          <h3>Power Factor Correction</h3>
+          <label>Real Power (W): <input type="number" id="pfRealPower"></label>
+          <label>Apparent Power (VA): <input type="number" id="pfApparentPower"></label>
+          <button id="calcPowerFactorCorrection">Calculate</button>
+          <p id="pfCorrectionResult"></p>
+        </div>
+      </div>
+
+      <div class="collapsible">
+        <button class="collapsible-header">3️⃣ Voltage Drop Calculator</button>
+        <div class="collapsible-content">
+          <h3>Voltage Drop Calculator</h3>
+          <label>Wire Length (m): <input type="number" id="vdLength"></label>
+          <label>Current (A): <input type="number" id="vdCurrent"></label>
+          <label>Resistance per meter (Ω): <input type="number" id="vdResistance"></label>
+          <button id="calcVoltageDrop">Calculate</button>
+          <p id="vdResult"></p>
+        </div>
+      </div>
+
+      <div class="collapsible">
+        <button class="collapsible-header">4️⃣ Short Circuit Analysis</button>
+        <div class="collapsible-content">
+          <h3>Short Circuit Analysis</h3>
+          <label>Source Voltage (V): <input type="number" id="scVoltage"></label>
+          <label>Impedance (Ω): <input type="number" id="scImpedance"></label>
+          <button id="calcShortCircuit">Calculate</button>
+          <p id="scResult"></p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>⚡ Developed for Electrical Engineering Students</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

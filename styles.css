@@ -1,0 +1,87 @@
+/* 🌟 General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* 🌟 Header */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 🌟 Navigation Bar */
+nav {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #f39c12;
+}
+
+/* 🌟 Collapsible Sections */
+.collapsible {
+    background: white;
+    color: black;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.collapsible-header {
+    background: #f39c12;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.collapsible-header:hover {
+    background: #e67e22;
+}
+
+.collapsible-content {
+    display: none;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+/* 🌟 Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
